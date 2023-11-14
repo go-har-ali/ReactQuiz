@@ -1,3 +1,4 @@
+import { myNavBar } from "./components/navbar";
 import { useEffect } from "react";
 import {
   Routes,
@@ -44,9 +45,14 @@ function App() {
   }, [pathname]);
 
   return (
+    <>
     <Routes>
       <Route path="/" element={<GaslurLandingPage />} />
     </Routes>
+
+
+    
+    </>
   );
 }
 export default App;
